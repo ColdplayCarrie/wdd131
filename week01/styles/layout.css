@@ -1,0 +1,61 @@
+body {
+    display: grid;
+}
+
+header {
+    background-color: #373636;
+    color: white;
+}
+
+h1 {
+    font-size: medium;
+    padding-left: 0.5em;
+    padding-bottom: 4em;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    font-size: medium;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    list-style: none;
+}
+
+nav li {
+    margin: auto;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+h2 {
+    font-size: medium;
+    padding-left: 0.5em;
+}
+
+article {
+    background-color: lightgrey;
+    padding-bottom: 20em;
+}
+
+footer {
+    text-align: center;
+    background-color: #373636;
+    color: white;
+    padding-bottom: 5em;
+}
