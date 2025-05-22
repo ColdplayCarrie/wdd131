@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Carrie Amdal</title>
+    <meta name="description" content="This is the Week 01 Assignment: Homepage for WDD 131 -Dynamic Web Fundamentals. My name is Carrie Amdal. 
+    This will be my own personal webpage. Through it, I am demonstrating my prerequisite knowledge of HTML and CSS along with using JavaScript for the first time 
+    to provide some dynamic information.">
+    <meta name="author" content="Carrie Amdal">
+    <link href="styles/base.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Carrie D. Amdal</h1>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a
+                        href="https://www.churchofjesuschrist.org/study/scriptures/nt/heb/12?lang=eng&id=p2#p2">Scripture</a>
+                </li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card">
+            <section>
+                <h2>About Me</h2>
+                <img id="image1" src="images/my_family.webp"
+                    alt="A picture of Carrie Amdal with her husband and children" width="300">
+                <p>My name is Carrie. I grew up in Oregon in the United States. My husband and I have been married for
+                    32 years and have five children. My oldest is married, and they just welcomed their first baby into
+                    the world! Our children live all over the U.S., and my husband and I live in Texas. I love the band
+                    Coldplay and have been to nine Coldplay concerts (two more are coming up very soon)! I love The Lord
+                    of the Rings trilogy (books and movies), cookies, Dr Pepper, Christmas, and bullet journaling. I
+                    work at a local high school, teach piano lessons, and if BYU Pathway Worldwide will get their act
+                    together, I might actually be able to graduate soon with my bachelors degree.</p>
+
+                <h3>Texas, United States of America</h3>
+                <figure>
+                    <img src="images/flagOfTexasWikipedia.webp" alt="A picture of the Texas State flag" width="300">
+                    <figcaption>Image from Wikipedia.org</figcaption>
+                </figure>
+                <p>According to Wikipedia.org, Texas became the 28th state admitted to the Union on 29 December 1845.
+                    The state capital is Austin. It is the second largest state in the United States and is known as The
+                    Friendly State. It is widely known that "everything's bigger in Texas."
+                </p>
+            </section>
+        </div>
+
+        <div class="card">
+            <section>
+                <h2>Web Dev Resources</h2>
+                <nav>
+                    <ul>
+                        <li><a href="https://www.dev.to">Dev.to Community</a></li>
+                        <li><a href="https://www.smashingmagazine.com">Smashing Magazine</a></li>
+                        <li><a href="https://www.css-tricks.com">CSS Tricks</a></li>
+                        <li><a href="https://www.w3schools.com">W3 Schools</a></li>
+                        <li><a href="https://www.udemy.com">Udemy</a></li>
+                        <li><a href="https://placehold.co">Image Placeholder</a></li>
+                    </ul>
+                </nav>
+
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="year"></span> | Carrie Amdal | Texas, USA
+        </p>
+
+        <p>
+            Last Modification: <span id="lastModified"></span>
+        </p>
+    </footer>
+
+</body>
+
+</html>
