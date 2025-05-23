@@ -3,6 +3,12 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
 header {
     background-color: #403a5c;
     color: rgb(226, 223, 223);
@@ -10,7 +16,6 @@ header {
 
 h1 {
     font-family: "Lora", serif;
-    font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     text-align: center;
@@ -32,6 +37,10 @@ main nav ul {
 
 main nav ul li {
     margin-bottom: 10px;
+}
+
+main nav ul li a:hover {
+    color: green;
 }
 
 h2 {
@@ -109,10 +118,6 @@ footer {
 .card {
     display: flex;
     flex-direction: column;
-    font-family: "Work Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
     border: 1px solid blue;
     border-style: ridge;
     border-radius: 10px;
