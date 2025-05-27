@@ -12,7 +12,7 @@ body {
 
 header {
     background-color: rgb(28, 75, 71);
-    color: rgb(226, 223, 223);
+    color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -64,7 +64,7 @@ footer {
 
 #menu::before {
     content: "☰";
-    color: rgb(226, 223, 223);
+    color: white;
 }
 
 #menu.open::before {
