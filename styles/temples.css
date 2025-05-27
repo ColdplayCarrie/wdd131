@@ -27,11 +27,9 @@ nav {
     display: flex;
 }
 
-h1,
 h2 {
     text-align: center;
-    padding: 1rem;
-    padding-top: .5rem;
+    padding-top: 2.5rem;
     font-size: x-large;
     color: rgb(28, 75, 71);
 }
