@@ -1,0 +1,159 @@
+/*7:20 pm 5/26/25*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+header {
+    background-color: rgb(28, 75, 71);
+    color: rgb(226, 223, 223);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+p {
+    font-size: large;
+    padding-bottom: .5rem;
+}
+
+nav {
+    display: block;
+    font-size: large;
+    max-width: 400px;
+    z-index: 99;
+}
+
+nav ul {
+    list-style: none;
+    right: 1.5rem;
+    top: .3rem;
+}
+
+nav li {
+    flex: none;
+}
+
+nav a {
+    color: white;
+    padding: 1.5rem;
+    text-decoration: none;
+    display: none;
+}
+
+nav a:hover {
+    color: yellowgreen;
+}
+
+h1 {
+    text-align: center;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    font-size: x-large;
+    color: rgb(28, 75, 71);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+footer {
+    background-color: rgb(28, 75, 71);
+    color: white;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    padding: .5rem .75rem;
+    color: #000;
+    border: 0;
+    background-color: transparent;
+    text-decoration: none;
+    position: absolute;
+    right: 1.5rem;
+    z-index: 100;
+}
+
+#menu::before {
+    content: "☰";
+    color: rgb(226, 223, 223);
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+
+/* Class Selectors */
+
+.open a {
+    display: block;
+}
+
+.navigation {
+    margin: 0 auto;
+    list-style: none;
+    max-width: 960px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: none;
+    text-align: right;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(28, 75, 71);
+}
+
+.navigation a:hover,
+navigation a:active {
+    color: white;
+}
+
+.header-text {
+    font-size: xx-large;
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: left;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 960px;
+    margin: 0 auto;
+    column-gap: 4rem;
+    row-gap: 2rem;
+    padding-top: .5rem;
+    padding-bottom: 2rem;
+}
+
+.gallery figure img {
+    border: 1px solid rgb(30, 107, 101);
+    max-width: 175px;
+    height: auto;
+}
+
+.gallery figcaption {
+    text-align: center;
+    color: rgb(30, 107, 101);
+}

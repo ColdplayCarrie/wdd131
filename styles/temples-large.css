@@ -1,0 +1,54 @@
+@media only screen and (min-width: 850px) {
+
+    header {
+        justify-content: space-between;
+    }
+
+    .header-text {
+        font-size: 2.5rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        position: static;
+        top: auto;
+        left: auto;
+        z-index: auto;
+        padding: 0;
+        font-size: x-large;
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navigation li {
+        width: auto;
+        text-align: left;
+    }
+
+    .navigation a {
+        padding: .5rem 0;
+        margin: 0;
+        background-color: transparent;
+    }
+
+    .navigation a:hover {
+        background-color: transparent;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 4rem;
+    }
+}
