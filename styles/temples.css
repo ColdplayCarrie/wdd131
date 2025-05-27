@@ -12,7 +12,7 @@ body {
 
 header {
     background-color: rgb(28, 75, 71);
-    color: white;
+    color: rgb(226, 223, 223);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -64,7 +64,7 @@ footer {
 
 #menu::before {
     content: "☰";
-    color: white;
+    color: rgb(226, 223, 223);
 }
 
 #menu.open::before {
@@ -152,5 +152,5 @@ footer {
 
 .gallery figcaption {
     text-align: center;
-    color: rgb(30, 107, 101);
+    color: black;
 }
