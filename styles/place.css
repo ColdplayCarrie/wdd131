@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    max-width: 100%;
+}
+
+:root {
+    --header-bg-color: rgba(170, 17, 17, 0.979);
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    max-width: 100%;
+    padding: 1rem;
+    font-size: medium;
+    background-color: var(--header-bg-color);
+    color: white;
+}
+
+img {
+    border-bottom: 3px solid var(--header-bg-color);
+}
+
+footer {
+    background-color: var(--header-bg-color);
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: small;
+}
+
+p {
+    padding-bottom: .25rem;
+}
+
+
+/*Class Selectors*/
+
+.data-row,
+.weather-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.data-label,
+.weather-label {
+    text-align: right;
+    padding: .25rem;
+    font-weight: bold;
+    font-size: small;
+}
+
+.data-value,
+.weather-value {
+    text-align: left;
+    padding: .25rem;
+    font-size: small;
+}
+
+.weather-section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.weather-section img {
+    border: none;
+    width: 70px;
+    max-width: 100%;
+}
+
+.data-section header,
+.weather-section header {
+    background-color: white;
+    color: black;
+    padding: .5rem;
+    padding-bottom: .5rem;
+    padding-top: 1rem;
+}
+
+.data-section h2,
+.weather-section h3 {
+    font-size: large;
+}
