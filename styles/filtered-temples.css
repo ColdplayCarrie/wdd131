@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Serif", serif;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    background-color: rgb(28, 75, 71);
+    color: rgb(226, 223, 223);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+p {
+    font-size: large;
+    padding-bottom: .5rem;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 2.5rem;
+    font-size: x-large;
+    color: rgb(28, 75, 71);
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 3.5rem;
+    left: 0;
+    z-index: 99;
+    padding-bottom: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    width: 100%;
+}
+
+nav li {
+    display: block;
+    width: 100%;
+    text-align: right;
+    flex: none;
+    padding-right: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+    margin: 0;
+    background-color: rgb(41, 107, 102);
+}
+
+nav a:hover {
+    color: yellowgreen;
+    background-color: black;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+footer {
+    background-color: rgb(28, 75, 71);
+    color: white;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    padding: .5rem .75rem;
+    border: 0;
+    background-color: transparent;
+    text-decoration: none;
+    position: absolute;
+    top: 2rem;
+    right: 1.5rem;
+    z-index: 100;
+}
+
+#menu::before {
+    content: "☰";
+    color: rgb(226, 223, 223);
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+h3 {
+    text-align: center;
+    padding-bottom: .5rem;
+    font-size: x-large;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+
+    box-shadow: 2px 2px 8px 5px rgb(180, 176, 176);
+}
+
+
+/* Class Selectors */
+
+.open li {
+    display: block;
+}
+
+nav.open {
+    display: flex;
+    padding-top: 2rem;
+}
+
+.header-text {
+    font-size: xx-large;
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-right: auto;
+}
+
+.temple-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 4rem;
+    row-gap: .25rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color: rgb(238, 233, 233);
+    border: 1px solid darkgrey;
+}
+
+.temple-card-row,
+.temple-card-last-row {
+    text-align: center;
+}
+
+.temple-card-last-row {
+    padding-bottom: 1rem;
+}
+
+.temple-key {
+    font-weight: bold;
+    color: darkblue;
+}
+
+.temple-card-container {
+    padding-top: 2rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-bottom: 2rem;
+    column-gap: 5rem;
+    row-gap: 3rem;
+}

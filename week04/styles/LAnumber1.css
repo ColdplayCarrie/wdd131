@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: large;
+}
+
+caption {
+    caption-side: bottom;
+    font-size: smaller;
+}
+
+th,
+td {
+    text-align: center;
+    border: 1px solid black;
+    padding: .5rem;
+}
+
+th {
+    color: white;
+}
+
+table thead tr:nth-last-child(1) {
+    background-color: #333;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #eee;
+}
+
+/* Class Selectors */
+.row-header {
+    font-weight: bold;
+}
+
+.main-header {
+    background-color: black;
+    color: white;
+}
