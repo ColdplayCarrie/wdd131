@@ -24,7 +24,8 @@ const temples = [
         area: 11500,
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg",
-        imageAlt: "Exterior of the Aba Nigeria Temple"
+        imageAlt: "Exterior of the Aba Nigeria Temple",
+        imageCopyright: "image from churchofjesuschrist.org"
     },
     {
         templeName: "Manti Utah",
@@ -34,7 +35,8 @@ const temples = [
         area: 74792,
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg",
-        imageAlt: "Exterior of the Manti Utah Temple"
+        imageAlt: "Exterior of the Manti Utah Temple",
+        imageCopyright: "image from churchofjesuschrist.org"
     },
     {
         templeName: "Payson Utah",
@@ -44,7 +46,8 @@ const temples = [
         area: 96630,
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg",
-        imageAlt: "Exterior of the Payson Utah Temple"
+        imageAlt: "Exterior of the Payson Utah Temple",
+        imageCopyright: "image from churchofjesuschrist.org"
     },
     {
         templeName: "Yigo Guam",
@@ -54,7 +57,8 @@ const temples = [
         area: 6861,
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg",
-        imageAlt: "Exterior of the Yigo Guam Temple"
+        imageAlt: "Exterior of the Yigo Guam Temple",
+        imageCopyright: "image from churchofjesuschrist.org"
     },
     {
         templeName: "Washington D.C.",
@@ -64,7 +68,8 @@ const temples = [
         area: 156558,
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg",
-        imageAlt: "Exterior of the Washington D.C. Temple"
+        imageAlt: "Exterior of the Washington D.C. Temple",
+        imageCopyright: "image from churchofjesuschrist.org"
     },
     {
         templeName: "Lima Perú",
@@ -74,7 +79,8 @@ const temples = [
         area: 9600,
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg",
-        imageAlt: "Exterior of the Lima Perú Temple"
+        imageAlt: "Exterior of the Lima Perú Temple",
+        imageCopyright: "image from churchofjesuschrist.org"
     },
     {
         templeName: "Mexico City Mexico",
@@ -84,7 +90,8 @@ const temples = [
         area: 116642,
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg",
-        imageAlt: "Exterior of the Mexico City Mexico Temple"
+        imageAlt: "Exterior of the Mexico City Mexico Temple",
+        imageCopyright: "image from churchofjesuschrist.org"
     },
     {
         templeName: "Auckland New Zealand",
@@ -94,7 +101,8 @@ const temples = [
         area: 45456,
         imageUrl:
             "https://churchofjesuschristtemples.org/assets/img/temples/auckland-new-zealand-temple/auckland-new-zealand-temple-57800.jpg",
-        imageAlt: "Exterior of the Auckland New Zealand Temple"
+        imageAlt: "Exterior of the Auckland New Zealand Temple",
+        imageCopyright: "image from churchofjesuschristtemples.org"
     },
     {
         templeName: "Portland Oregon",
@@ -104,7 +112,8 @@ const temples = [
         area: 80500,
         imageUrl:
             "https://churchofjesuschristtemples.org/assets/img/temples/portland-oregon-temple/portland-oregon-temple-30178.jpg",
-        imageAlt: "Exterior of the Portland Oregon Temple"
+        imageAlt: "Exterior of the Portland Oregon Temple",
+        imageCopyright: "image from churchofjesuschristtemples.org"
     },
     {
         templeName: "Salt Lake",
@@ -114,7 +123,8 @@ const temples = [
         area: 382207,
         imageUrl:
             "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-1092.jpg",
-        imageAlt: "Exterior of the Salt Lake Temple"
+        imageAlt: "Exterior of the Salt Lake Temple",
+        imageCopyright: "image from churchofjesuschristtemples.org"
     },
 ];
 
@@ -138,6 +148,10 @@ function createTempleCard(temple) {
         </div>
 
         <img loading="lazy" class="temple-image" src="${temple.imageUrl}" alt="${temple.imageAlt}">
+
+        <div class="copyright">
+            <span>${temple.imageCopyright}</span>
+        </div>
 
     </div>
 `;
