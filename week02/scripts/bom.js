@@ -13,5 +13,11 @@ list.append(li);
 //add Add Chapter button and event listener for adding the chapter
 const addChapterButton = document.createElement("button")
 buttonElement.addEventListener("click", () => {
-
+    if (input.value != "") {
+        displayList(input.value);
+        chaptersArray.push(input.value);
+        setChapterList();
+        input.value = "";
+        input.focus();
+    }
 })
