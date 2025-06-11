@@ -24,22 +24,23 @@
 
     <main>
         <h1>Product Review</h1>
-        <form method="get" action="review.html" class="form1"></form>
-        <fieldset>
-            <legend>Product Name</legend>
-            <select id="product-choice" name="Product" required>
-                <option value="" selected disabled>Please select an option</option>
-                <option value="flux-capacitor">Flux Capacitor</option>
-                <option value="power-laces">Power Laces</option>
-                <option value="time-circuits">Time Circuits</option>
-                <option value="low-voltage-reactor">Low Voltage Reactor</option>
-                <option value="warp-equalizer">Warp Equalizer</option>
-            </select>
-        </fieldset>
+        <h2>*indicates required field</h2>
+        <form method="get" action="review.html" class="form1" autocomplete="on">
+            <fieldset>
+                <legend>Product Name<span class="asterisk">*</span></legend>
+                <label for="product-choice" class="visually-hidden">Choose a product from the list</label>
+                <select id="product-choice" name="Product" required>
+                    <option value="" selected disabled>Please select an option</option>
+                    <option name="flux-capacitor" value="fc-1888">Flux Capacitor</option>
+                    <option name="power-laces" value="fc-2050">Power Laces</option>
+                    <option name="time-circuits" value="fs-1987">Time Circuits</option>
+                    <option name="low-voltage-reactor" value="ac-2000">Low Voltage Reactor</option>
+                    <option name="warp-equalizer" value="jj-1969">Warp Equalizer</option>
+                </select>
+            </fieldset>
 
-        <fieldset>
-            <legend>Overall Rating</legend>
-            <label>
+            <fieldset>
+                <legend>Overall Rating<span class="asterisk">*</legend>
                 <div class="stars">
                     <input type="radio" id="star5" name="stars" value="5" required><label for="star5"
                         title="5 stars"></label>
@@ -48,53 +49,62 @@
                     <input type="radio" id="star2" name="stars" value="2"><label for="star2" title="2 stars"></label>
                     <input type="radio" id="star1" name="stars" value="1"><label for="star1" title="1 star"></label>
                 </div>
-        </fieldset>
+            </fieldset>
 
-        <fieldset>
-            <legend>Date of Installation</legend>
-            <div class="installation">
-                <input type="date" name="installation-date" required><label title="Date of Installation"></label>
-            </div>
-        </fieldset>
+            <fieldset>
+                <legend>Date of Installation<span class="asterisk">*</span></legend>
+                <div class="installation">
+                    <input type="date" name="installation-date" id="installation-date" required>
 
-        <fieldset>
-            <legend>Which features did you find most useful in the product?</legend>
-            <legend class="features">(Check all that apply)</legend>
-            <div class="checkboxes">
-                <input type="checkbox" id="durability" name="features" value="yes"><label
-                    for="durability">Durability</label>
-                <input type="checkbox" id="ease-of-use" name="features" value="yes"><label for="ease-of-use">Ease of
-                    Use</label>
-                <input type="checkbox" id="performance" name="features" value="yes"><label
-                    for="performance">Performance</label>
-                <input type="checkbox" id="design" name="features" value="yes"><label for="design">Design</label>
-            </div>
-        </fieldset>
+                    <label for="installation-date" class="visually-hidden" title="Date of Installation">Enter date of
+                        installation</label>
+                </div>
+            </fieldset>
 
-        <fieldset>
-            <legend>Customer Review</legend>
-            <textarea id="text-area" name="text-area"></textarea><label for="text-area">Review</label>
-        </fieldset>
+            <fieldset>
+                <legend>Which features did you find most useful in the product?</legend>
+                <legend class="features">(Check all that apply)</legend>
+                <div class="checkbox">
+                    <label for="design"><input type="checkbox" id="design" name="features" value="yes">Design</label>
+                    <label for="durability"><input type="checkbox" id="durability" name="features"
+                            value="yes">Durability</label>
+                    <label for="ease-of-use"><input type="checkbox" id="ease-of-use" name="features" value="yes">Ease of
+                        Use</label>
+                    <label for="performance"><input type="checkbox" id="performance" name="features"
+                            value="yes">Performance</label>
+                </div>
+            </fieldset>
 
-        <fieldset>
-            <legend>User Name</legend>
-            <input type="text" id="user-name" name="name"><label for="user-name">User Name</label>
-        </fieldset>
+            <fieldset>
+                <legend>Customer Review</legend>
+                <div class="review">
+                    <label for="text-area">Share your thoughts regarding the product<textarea id="text-area"
+                            name="text-area" placeholder="Start typing here..."></textarea></label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>User Name</legend>
+                <div class="username">
+                    <label for="user-name">User Name:</label><input type="text" id="user-name" name="name"
+                        placeholder="chris123" autocomplete="on">
+                </div>
+            </fieldset>
+
+            <input type="submit" id="submit" value="Complete the Form">
+
+        </form>
 
     </main>
 
-    <input type="submit" value="Submit Form"><label for="submit">Submit Form</label>
-
     <footer>
-        <footer>
-            <p>
-                &copy;<span id="year"></span> | Carrie Amdal | Texas, USA
-            </p>
+        <p>
+            &copy;<span id="year"></span> | Carrie Amdal | Texas, USA
+        </p>
 
-            <p>
-                Last Modification: <span id="lastModified"></span>
-            </p>
-        </footer>
+        <p>
+            Last Modification: <span id="lastModified"></span>
+        </p>
     </footer>
 
 </body>

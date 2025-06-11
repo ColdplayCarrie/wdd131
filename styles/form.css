@@ -7,11 +7,19 @@ body {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-style: normal;
-    padding-left: .5rem;
+    padding-left: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
 main {
     display: block;
+}
+
+h2 {
+    font-size: small;
+    font-style: italic;
+    color: rgb(155, 25, 25);
 }
 
 label {
@@ -27,6 +35,7 @@ fieldset {
 
 legend {
     font-weight: 600;
+    font-size: large;
     color: rgb(68, 68, 206);
     padding-left: .5rem;
     padding-right: .5rem;
@@ -37,7 +46,45 @@ select {
     min-height: 44px;
 }
 
+textarea {
+    display: block;
+    min-height: 200px;
+    min-width: 400px;
+    padding: .5rem;
+}
+
+textarea::placeholder,
+input::placeholder {
+    color: lightslategray;
+    font-style: italic;
+}
+
+footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+p {
+    padding-top: .5rem;
+}
+
+
 /*Class Selectors*/
+
+/*Product Name*/
+.asterisk {
+    color: rgb(155, 25, 25);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    border: 0;
+}
 
 /* Star Rating System*/
 
@@ -56,7 +103,7 @@ select {
     display: flex;
     align-items: center;
     caret-color: rgba(0, 0, 0, 0);
-    /* remove blinking cursor*/
+    padding-bottom: .5rem;
 }
 
 .stars label:hover {
@@ -97,17 +144,56 @@ select {
     font-size: smaller;
     padding-top: 0;
     padding-bottom: .5rem;
-    flex-direction: column;
 }
 
-.features input[type="checkbox"] {
+input[type="checkbox"] {
+    display: flex;
+    flex-direction: column;
     margin-right: .25rem;
     vertical-align: middle;
 }
 
-.checkboxes {
-    display: block;
+.checkbox label {
+    display: flex;
+    padding: .25rem;
 }
 
+/*Customer Review*/
+.review label {
+    font-size: medium;
+}
 
+#text {
+    padding-bottom: 5rem;
+}
 
+/*User Name*/
+.username label {
+    padding-right: .5rem;
+    padding-bottom: .25rem;
+}
+
+.username {
+    display: grid;
+    padding: .25rem;
+    max-width: 85%;
+}
+
+.username input[type="text"] {
+    padding-right: .25rem;
+    min-height: 44px;
+}
+
+/*Submit Button*/
+input[type="submit"] {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-color: darkblue;
+    color: white;
+    font-size: larger;
+    max-width: 600px;
+    border: 4px solid black;
+    margin: .25rem;
+}
