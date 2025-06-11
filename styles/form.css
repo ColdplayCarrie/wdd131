@@ -158,6 +158,12 @@ input[type="checkbox"] {
     padding: .25rem;
 }
 
+.sublegend {
+    font-size: small;
+    font-style: italic;
+    color: rgb(68, 68, 206);
+}
+
 /*Customer Review*/
 .review label {
     font-size: medium;
