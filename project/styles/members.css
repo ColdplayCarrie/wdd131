@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-content: center;
+    justify-content: center;
+}
+
+:root {
+    --header-bg-color: #7be6e0;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    background-color: var(--header-bg-color);
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+}
+
+h1 {
+    font-size: large;
+    font-weight: 150;
+    padding-top: .5rem;
+}
+
+nav a:hover {
+    color: white;
+}
+
+div a {
+    font-size: medium;
+    font-weight: 300;
+}
+
+footer {
+    background-color: var(--header-bg-color);
+    max-width: 100%;
+    text-align: center;
+}
+
+figure img {
+    max-height: 450px;
+    max-width: 400px;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    /*border-color: black;*/
+}
+
+figcaption {
+    font-style: italic;
+}
+
+p {
+    text-align: center;
+    padding: .25rem;
+}
+
+
+/* Class Selectors */
+
+.non-nav-header {
+    text-align: center;
+    max-height: 150px;
+}
+
+.non-nav-header img {
+    max-height: 150px;
+    padding-bottom: 2rem;
+}
+
+/*Header Navigation*/
+.header-nav {
+    background-color: black;
+    padding-top: .25em;
+    padding-bottom: .25em;
+}
+
+.header-nav ul {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    list-style: none;
+}
+
+.header-nav li {
+    margin: auto;
+}
+
+.header-nav a {
+    color: var(--header-bg-color);
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+}
+
+/*Main*/
+.image {
+    display: flex;
+    text-align: center;
+}
+
+.member-stats {
+    padding: 1.5rem;
+    font-weight: 500;
+    font-size: x-large;
+}

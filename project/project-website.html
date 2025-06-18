@@ -17,56 +17,113 @@
 
 <body>
     <header>
-        <h1>All About</h1>
-        <img src="images/shineeLogo.webp" alt="The name SHINee stylized">
+        <div class="non-nav-header">
+            <h1>ALL ABOUT</h1>
+            <img src="images/shinee-logo.webp" alt="The name SHINee stylized">
+        </div>
 
-        <nav>
+        <nav class="header-nav">
             <ul>
-                <li><a href="#">Onew</a></li>
-                <li><a href="#">Jonghyun</a></li>
-                <li><a href="#">Minho</a></li>
-                <li><a href="#">Key</a></li>
-                <li><a href="#">Taemin</a></li>
+                <li><a href="http://127.0.0.1:5500/project/project-website.html">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/project/onew.html">Onew</a></li>
+                <li><a href="http://127.0.0.1:5500/project/jonghyun.html">Jonghyun</a></li>
+                <li><a href="http://127.0.0.1:5500/project/key.html">Key</a></li>
+                <li><a href="http://127.0.0.1:5500/project/minho.html">Minho</a></li>
+                <li><a href="http://127.0.0.1:5500/project/taemin.html">Taemin</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <picture>
-            <img src="" alt="Large picture of SHINee">
-        </picture>
 
-        <section>
-            <h2>Who is SHINee?</h2>
-            <p>Here is a brief synopsis of who SHINee is</p>
-        </section>
+        <div class="content-container">
 
-        <section>
-            <h3>Fan Info</h3>
-            <p>Explain what a Shawol is</p>
-            <p>Possibly upcoming concert?</p>
-            <p>Enter email for maiiing list</p>
-        </section>
+            <div class="hero-image">
+                <picture>
+                    <source srcset="images/shinee-hero.webp" media="(min-width: 800px)" loading="lazy">
+                    <img src="images/shinee-small.webp" alt="Photo of SHINee" loading="lazy">
+                </picture>
 
-        <section>
-            <h4>What is Kpop?</h4>
-            <p>Explain briefly what Kpop is</p>
-        </section>
+                <div class="spotify">
+                    <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/artist/2hRQKC0gqlZGPrmUKbcchR?utm_source=generator"
+                        width="100%" height="200" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
 
-        <nav>
-            <p>insert links to listen to their music</p>
-        </nav>
+            <section class="who">
+                <h2>Who is SHINee?</h2>
+                <p>SHINee made its debut as a South Korean Kpop group on 25 May 2008. SHINee consists of five members:
+                    Onew, Johnghyun, Key, Minho, and Taemin.
+                    Johnghyun passed away on 18 December 2017. The other four members have continued producing and
+                    recording content with their latest single, Poet | Artist,
+                    released on 25 May 2025 in celebration of the 17th anniversary of their debut.</p>
+                <nav class="wiki">
+                    <a href="https://en.wikipedia.org/wiki/Shinee">SHINee's Wikipedia Page</a>
+                </nav>
+            </section>
+
+            <section class="kpop">
+                <h4>What is Kpop?</h4>
+                <p>Kpop is short for Korean Pop music. Kpop began in the 1990s and has since spread to become
+                    a global music market. Typically, Kpop groups consist of girls or boys, and within each group
+                    there are individual roles. These roles are usually (but not limited to) leader, main vocal, main
+                    dancer, rapper, and the "face" of the group.</p>
+                <nav class="wiki">
+                    <a href="https://en.wikipedia.org/wiki/K-pop">Kpop Wikipedia Page</a>
+                </nav>
+            </section>
+
+            <section class="fans">
+                <h3>Fan Info</h3>
+                <p>SHINee fans are called Shawols which is a combination of the words "SHINee" and "World".</p>
+                <nav class="wiki">
+                    <a href="https://shinee.fandom.com/wiki/SHINee_World">SHINee Wiki</a>
+                </nav>
+
+                <div class="form">
+                    <form method="get" action="mailing-list-thanks.html" class="form1" autocomplete="on">
+                        <fieldset>
+                            <legend>Fan Mailing List</legend>
+
+                            <div class="first-name">
+                                <label for="firstName">First Name: </label><input type="text" id="firstName"
+                                    name="firstName" placeholder="Chris" autocomplete="on">
+                            </div>
+
+                            <div class="last-name">
+                                <label for="lastName">Last Name: </label><input type="text" id="lastName"
+                                    name="lastName" placeholder="Smith" autocomplete="on">
+                            </div>
+
+                            <div class="email">
+                                <label for="email">Email Address:<span class="asterisk">*</span></label><input
+                                    type="email" id="email" name="email" placeholder="shawol1@gmail.com"
+                                    autocomplete="on" required>
+                            </div>
+
+                            <div class="submit-button">
+                                <input type="submit" id="submit" value="Sign me up!">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+
+            </section>
+
+        </div>
 
     </main>
 
     <footer>
-        <p>
-            &copy;<span id="year"></span> | Carrie Amdal | Texas, USA
-        </p>
+        <p>&copy;<span id="year"></span> | Carrie Amdal | Texas, USA</p>
 
-        <p>
-            Last Modification: <span id="lastModified"></span>
-        </p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+
+        <p><span class="website">Number of visits: </span><span class="visits"></span></p>
     </footer>
 
 </body>
