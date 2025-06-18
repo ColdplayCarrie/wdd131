@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --header-bg-color: #7be6e0;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-size: xx-large;
+    font-weight: 150;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    background-color: var(--header-bg-color);
+    text-align: center;
+}
+
+a {
+    font-size: x-large;
+    background-color: darkcyan;
+    color: white;
+    padding: 1rem;
+    border-radius: 25%;
+    padding: 1rem;
+}
+
+.link-container {
+    text-align: center;
+}

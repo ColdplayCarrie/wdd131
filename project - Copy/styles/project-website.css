@@ -111,6 +111,7 @@ footer {
 /*Background Image*/
 .background-image {
     position: relative;
+    padding-left: 1rem;
 }
 
 .background-image img {

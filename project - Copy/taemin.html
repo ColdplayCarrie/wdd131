@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131: Dynamic Web Fundamentals - Carrie D. Amdal</title>
+    <meta name="description" content="This is a week 06 project website supporting webpage.">
+    <meta name="author" content="Carrie Amdal">
+    <link href="styles/members.css" rel="stylesheet">
+    <script src="scripts/members.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="non-nav-header">
+            <h1>ALL ABOUT</h1>
+            <img src="images/shinee-logo.webp" alt="The name SHINee stylized">
+        </div>
+
+        <nav class="header-nav">
+            <ul>
+                <li><a href="http://127.0.0.1:5500/project/project-website.html">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/project/onew.html">Onew</a></li>
+                <li><a href="http://127.0.0.1:5500/project/jonghyun.html">Jonghyun</a></li>
+                <li><a href="http://127.0.0.1:5500/project/key.html">Key</a></li>
+                <li><a href="http://127.0.0.1:5500/project/minho.html">Minho</a></li>
+                <li><a href="http://127.0.0.1:5500/project/taemin.html">Taemin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="image">
+            <figure>
+                <img src="images/taemin-debut.webp" alt="Taemin when he debuted" loading="lazy">
+                <figcaption>Taemin around 2008</figcaption>
+            </figure>
+
+            <div class="member-stats">
+                <p>Name: 이태민 – Lee Taemin</p>
+                <p>SHINee Dancer</p>
+                <p>Born: 18 July 1993</p>
+                <a href="https://en.wikipedia.org/wiki/Taemin">Read more about Taemin on Wikipedia</a>
+            </div>
+
+            <figure>
+                <img src="images/taemin-current.webp" alt="Taemin currently" loading="lazy">
+                <figcaption>Taemin currently</figcaption>
+            </figure>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy;<span id="year"></span> | Carrie Amdal | Texas, USA</p>
+
+        <p>Last Modification: <span id="lastModified"></span></p>
+
+        <p><span class="visits-label">Number of visits: </span><span class="page-visits"></span></p>
+    </footer>
+</body>
